@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: blueviolet;
+}
+
+.login-form{
+    margin: 50px auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.login-form label{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-form input{
+    padding: 10px;
+    width: 95%;
+    border: 1px ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form input:focus{
+       border-color: black;
+}
+.login-form div{
+    color: red;
+}
+
+.login-form button[type='submit']{
+    width: 95%;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.login-form button[type='submit']:hover{
+    background-color: black;
+}
+.login-form button[type='button']{
+    width: 95%;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.login-form button[type='button']:hover{
+    background-color: black;
+}
+

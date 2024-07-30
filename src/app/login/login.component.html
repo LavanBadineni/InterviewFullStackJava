@@ -1,0 +1,28 @@
+<h1>Well Come to your Interview preperation</h1>
+<h3>Please login for continue...!</h3>
+<form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+    <label for="name">Name:</label>
+    <input  id="name" formControlName="name" [(ngModel)]="values.name">
+    <div *ngIf="loginForm?.get('name')?.invalid && loginForm?.get('name')?.touched">
+        *name is required
+    </div>
+
+    <label for="password">Password:</label>
+    <input id="password" formControlName="password" [(ngModel)]="values.password">
+    <div *ngIf="loginForm?.get('password')?.invalid && loginForm?.get('password')?.touched">
+        <div *ngIf="loginForm?.get('password')?.errors?.['required']">*password is required</div>
+        <div *ngIf="loginForm?.get('password')?.errors?.['minlength']">*password must be atleast 6 characters long</div>
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+
+    <br>
+    <br>
+    <br>
+
+    <h3>If you doesn't have an account please register...!</h3>
+<button type="button" (click)=navigateToRegister()>Register</button>
+
+</form>
+
+
